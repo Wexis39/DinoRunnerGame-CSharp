@@ -242,7 +242,7 @@ namespace DinoRunnerGame
         }
         private void GameOver()
         {
-            GameOverForm gameOver = new GameOverForm();
+            GameOverForm gameOver = new GameOverForm(score);
             gameOver.Show();
             this.Hide();
         }

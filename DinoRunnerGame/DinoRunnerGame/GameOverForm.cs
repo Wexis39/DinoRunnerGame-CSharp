@@ -12,9 +12,10 @@ namespace DinoRunnerGame
 {
     public partial class GameOverForm : Form
     {
-        public GameOverForm()
+        public GameOverForm(int score)
         {
             InitializeComponent();
+            lblScore.Text = score.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -31,6 +31,8 @@
             label1 = new Label();
             button1 = new Button();
             button2 = new Button();
+            label2 = new Label();
+            lblScore = new Label();
             SuspendLayout();
             // 
             // label1
@@ -49,7 +51,7 @@
             button1.BackColor = Color.Green;
             button1.Font = new Font("Comic Sans MS", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(81, 173);
+            button1.Location = new Point(81, 258);
             button1.Name = "button1";
             button1.Size = new Size(277, 79);
             button1.TabIndex = 1;
@@ -62,7 +64,7 @@
             button2.BackColor = Color.FromArgb(192, 0, 0);
             button2.Font = new Font("Comic Sans MS", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(412, 173);
+            button2.Location = new Point(412, 258);
             button2.Name = "button2";
             button2.Size = new Size(277, 79);
             button2.TabIndex = 1;
@@ -70,14 +72,38 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Violet;
+            label2.Location = new Point(178, 147);
+            label2.Name = "label2";
+            label2.Size = new Size(315, 65);
+            label2.TabIndex = 0;
+            label2.Text = "Your Score is";
+            // 
+            // lblScore
+            // 
+            lblScore.AutoSize = true;
+            lblScore.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblScore.ForeColor = Color.Violet;
+            lblScore.Location = new Point(499, 147);
+            lblScore.Name = "lblScore";
+            lblScore.Size = new Size(56, 65);
+            lblScore.TabIndex = 0;
+            lblScore.Text = "0";
+            // 
             // GameOverForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(771, 310);
+            ClientSize = new Size(771, 382);
             Controls.Add(button2);
             Controls.Add(button1);
+            Controls.Add(lblScore);
+            Controls.Add(label2);
             Controls.Add(label1);
             Name = "GameOverForm";
             Text = "GameOverForm";
@@ -90,5 +116,7 @@
         private Label label1;
         private Button button1;
         private Button button2;
+        private Label label2;
+        private Label lblScore;
     }
 }
